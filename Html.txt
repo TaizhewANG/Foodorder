@@ -1,0 +1,328 @@
+<body>
+ <p>听 《成都》 这首歌:</p>
+    <audio controls>
+      <source src="https://atts.w3cschool.cn/chengdu.mp3" type="audio/mpeg" ></source>
+    </audio>
+</body>
+
+<body>
+  <header>
+    <h1>W3Cschool 在线教程</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#hot">热门教程</a></li>
+        <li><a href="#htmlcss">HTML+CSS</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <section>
+        <form>
+          <p>注册账号</p>
+          <label for="email">邮箱:</label>
+          <input type="text" id="email" name="email">
+          <input type="submit" name="submit" value="注册">
+        </form>
+     </section>
+  
+    <section id="hot">
+      <h2>热门教程</h2>
+      <ul>
+        <li><a href="/html">HTML 教程</a></li>
+        <li><a href="/python">Python 教程</a></li>
+        <li><a href="/ruby">Ruby 教程</a></li>
+        <li><a href="/go">Go 教程</a></li>
+      </ul>
+    </section>
+    <section id="htmlcss">
+      <h2>HTML+CSS 教程</h2>
+      <ul>
+        <li><a href="/html">HTML 教程</a></li>
+        <li><a href="/css">CSS 教程</a></li>
+        <li><a href="/bootstrap">Bootstrap 教程</a></li>
+        <li><a href="/go">Go 教程</a></li>
+      </ul>
+    </section>
+    <section id="javascript">
+      <h2>JavaScript 教程</h2>
+      <ul>
+        <li><a href="/javascript">JavaScript 教程</a></li>
+        <li><a href="/vue">Vue 教程</a></li>
+        <li><a href="/React">React 教程</a></li>
+        <li><a href="/Angular">Angular 教程</a></li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>&copy; 2020 w3cschool</footer>
+  
+</body>
+
+上一个挑战中，单选按钮含有一个拥有for属性的label标签，for属性指向相关选项的id。
+
+然而单选按钮通常成组出现，用户必须其中选择一项。
+
+使用fieldset标签将单选按钮组包含在里面就可以实现这个目的，
+
+通常还会使用legend标签来为单选按钮组提供文字说明。
+
+屏幕阅读器也可以朗读这些文字。 
+
+当选项的含义很明确时，
+
+如：性别选择，fieldset标签与legend标签就可以省略。
+
+这时，使用含有for属性的label标签就足够了。
+
+例如:
+
+ <header>
+    <h1>W3Cschool 在线教程</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#hot">热门教程</a></li>
+        <li><a href="#htmlcss">HTML+CSS</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <section>
+        <form>
+          <legend>注册账号</legend>
+          
+          
+          <label for="email">邮箱:</label>
+          <input type="text" id="email" name="email">
+          <!-- 在这行下面添加代码 -->
+          <fieldset>
+            <p>你的等级是?</p>
+            <input id="level0" type="radio" name="levels" value="0">
+            <label for="level0">没有经验</label><br>
+            
+            <input id="level1" type="radio" name="levels" value="1">
+            <label for="level1">一年工作经验</label><br>
+            
+            <input id="level2" type="radio" name="levels" value="2">
+            <label for="level2">两年工作经验</label>
+          </fieldset>
+          <!-- 在这行上面添加代码 -->
+          
+          
+          <input type="submit" name="submit" value="注册">
+        </form>
+     </section>
+  
+    <section id="hot">
+      <h2>热门教程</h2>
+      <ul>
+        <li><a href="/html">HTML 教程</a></li>
+        <li><a href="/python">Python 教程</a></li>
+        <li><a href="/ruby">Ruby 教程</a></li>
+        <li><a href="/go">Go 教程</a></li>
+      </ul>
+    </section>
+    <section id="htmlcss">
+      <h2>HTML+CSS 教程</h2>
+      <ul>
+        <li><a href="/html">HTML 教程</a></li>
+        <li><a href="/css">CSS 教程</a></li>
+        <li><a href="/bootstrap">Bootstrap 教程</a></li>
+        <li><a href="/go">Go 教程</a></li>
+      </ul>
+    </section>
+    <section id="javascript">
+      <h2>JavaScript 教程</h2>
+      <ul>
+        <li><a href="/javascript">JavaScript 教程</a></li>
+        <li><a href="/vue">Vue 教程</a></li>
+        <li><a href="/React">React 教程</a></li>
+        <li><a href="/Angular">Angular 教程</a></li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>&copy; 2020 w3cschool</footer>
+  
+</body>
+
+
+<head>
+  <style>
+  body {
+    color: hsl(0, 55%, 15%);
+    background-color: hsl(120, 25%, 85%);
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>2020年“双11”预售开启 千万吨商品蓄势待“发”</h1>
+  </header>
+  <article>
+    <h2>备货量大涨3000%</h2>
+    
+    <p><time datetime="2020-10-21">10月21日</time>，菜鸟发布数据，已有近1000万吨“双11”商品备货进入菜鸟仓，规模比2019年几乎翻倍。 </p>
+
+    <p>此前，京东物流也发布了数据，今年预计备货量总计超过12亿件商品，全国750多个仓库及30座亚洲一号仓库将投入使用。</p>
+
+    <p>菜鸟国内供应链总经理黄巍表示，疫情以来，中国的内需市场成为全球商业的新希望。为了抓住年内最强劲的商业增长机会，国内和全球数十万个品牌、数百万商家正纷纷把商品备进“双11”仓库。</p>
+
+    <p>从商家备货数据看，面部护肤、女性护理用品、家用洗护类商品是今年三大“备货之王”。“爱美”连续多年成为“双11”第一大主题。</p>
+　
+  </article>
+  <footer>&copy; 2020 Loen Wang</footer>
+</body>
+
+
+
+
+
+<style>
+  h4 {
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+  .links {
+    margin-right: 20px;
+    
+  }
+  .fullCard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    width: 245px;
+  }
+  .cardContent {
+    padding: 10px;
+  }
+</style>
+<div class="fullCard">
+  <div class="cardContent">
+    <div class="cardText">
+      <h4>阿里巴巴集团</h4>
+      <p>
+          阿里巴巴网络技术有限公司（简称：阿里巴巴集团或阿里巴巴）是以曾担任英语教师的马云为首的18人于1999年在浙江省杭州市创立的公司。
+          <a href="">关于阿里巴巴的信息</a>查看阿里巴巴的信息。
+          
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+<html>
+ <head> 
+  <style>
+    p:focus {
+      background-color: #ff0;
+    }
+  </style> 
+ </head> 
+ <body> 
+  <header>
+   <h1>微课需求调研</h1>
+  </header> 
+  <section> 
+   <form> 
+    <p>非常感谢参与W3Cschool微课需求调研~</p> 
+    <label for="username">用户名:</label> 
+    <input type="text" id="username" name="username" />
+    <br /> 
+    <fieldset> 
+     <legend>您目前从事的行业：</legend> 
+     <input id="student" type="radio" name="profession" value="student" /> 
+     <label for="student">在校学生</label>
+     <br />
+     <input id="teacher" type="radio" name="profession" value="teacher" /> 
+     <label for="teacher">在职教师</label>
+     <br />
+     <input id="worker" type="radio" name="profession" value="worker" /> 
+     <label for="worker">互联网在职</label> 
+    </fieldset> 
+    <br /> 
+    <fieldset> 
+     <legend>您感兴趣的职业:</legend> 
+     <input id="frontender" type="checkbox" name="occupation" value="frontender" /> 
+     <label for="frontender">Web前端工程师</label>
+     <br />
+     <input id="androider" type="checkbox" name="occupation" value="androider" /> 
+     <label for="androider">Android工程师</label>
+     <br />
+     <input id="pythoner" type="checkbox" name="occupation" value="pythoner" /> 
+     <label for="pythoner">Python工程师</label>
+     <br />
+     <input id="phper" type="checkbox" name="occupation" value="phper" /> 
+     <label for="phper">PHP工程师</label> 
+    </fieldset> 
+    <br />
+    <input type="submit" name="submit" value="提交" /> 
+   </form> 
+   <br /> 
+  </section> 
+  <footer>
+   &copy; 2020 W3Cschool
+  </footer>  
+ </body>
+</html>
+
+
+
+
+tabindex 全局属性 指示其元素是否可以聚焦，以及它是否/在何处参与顺序键盘导航（通常使用Tab键，因此得名）。
+
+它的值可以是零、负整数及正整数，并决定了标签的行为。 
+
+    tabindex=负值 (通常是tabindex=“-1”)，表示元素是可聚焦的，但是不能通过键盘导航来访问到该元素，用JS做页面小组件内部键盘导航的时候非常有用。
+    tabindex="0" ，表示元素是可聚焦的，并且可以通过键盘导航来聚焦到该元素，它的相对顺序是当前处于的DOM结构来决定的。
+    tabindex=正值，表示元素是可聚焦的，并且可以通过键盘导航来访问到该元素；它的相对顺序按照tabindex 的数值递增而滞后获焦。如果多个元素拥有相同的 tabindex，它们的相对顺序按照他们在当前DOM中的先后顺序决定。
+
+根据键盘序列导航的顺序，值为 0 、非法值、或者没有 tabindex 值的元素应该放置在 tabindex 值为正值的元素后面。
+
+
+当用户在页面中使用 tab 键时，有些标签，
+
+如：链接、表单控件，可以自动获得焦点。
+
+它们获得焦点的顺序与它们出现在文档流中的顺序一致。
+
+我们可以通过将tabindex属性值设为 0，来给其他标签赋予相同的功能，
+
+如：div、span、p等。
+
+例如：
+
+
+ tabindex属性还可以指定标签的 tab 键顺序，
+
+将它的值设置为大于或等于 1 就可以实现这个功能。
+
+tabindex属性值为 1 的标签将首先获得键盘焦点，
+
+然后焦点将按照指定的tabindex的值（如：2，3 等）的顺序进行移动，
+
+直到回到默认的或tabindex值为 0 的标签上，如此循环。 
+
+注意:
+
+当按照这种方式设置 tab 键顺序时，将会覆盖默认的顺序（标签在文档流中出现的顺序）。
+
+这可能会令那些希望从页面顶部开始导航的用户感到困惑。
+
+这个技术在某些情况下可能是必要的，但是对可访问性而言，在应用时要十分小心。 
+
+例如: 
+
+
+http://zwfw.cscse.edu.cn/cscse/lxfwzxwsfwdt2020/xlxwrz32/sqcl/ndjm/442412/index.html
+
+
