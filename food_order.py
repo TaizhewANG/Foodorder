@@ -1,3 +1,4 @@
+# 食品目录
 class food_order:
     ordering_fodd_name =['酸菜鱼','鱼香肉丝', '烧排骨','鸡肉炒蛋']
     order_food_price =[32,42,43,21]
@@ -39,7 +40,7 @@ class food_order:
             print("++++++++++++++++++++++++++++++++++++++++++")
            
             return total_price
-
+# 食品订单
     def do_order_food(self):
         while True:
             self.welcome()
